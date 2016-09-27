@@ -1,0 +1,20 @@
+{
+  "name": "mini-auth",
+  "description": "Route 1: “/” h1 welcome <a@b.com> Route 2: input email - input pw - submit  Route 3: “/register”  input email - input pw - submit  Route 4: /logout Deployed",
+  "main": "server.js",
+  "authors": [
+    "Glenn Spinner <glenngineer1@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/glenngineer1/mini-auth",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
