@@ -7,6 +7,10 @@ const app = express()
 const port = process.env.PORT || 3000
 app.set('port', port)
 
+app.get('/', (req, res) =>
+  res.send('Welcome To My Mini Auth App!')
+)
+
 app.listen(port, () =>
-  console.log(`Listening on port: ${port}`);
+  console.log(`Listening on port: ${port}`)
 )
