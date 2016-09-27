@@ -7,8 +7,17 @@ const app = express()
 const port = process.env.PORT || 3000
 app.set('port', port)
 
+app.set('view engine', 'pug')
+
+if (process.env.NODE_ENV !== 'production') {
+  app.locals.pretty = true
+}
+
+// middlewares
+app.use(express.static('public'))
+
 app.get('/', (req, res) =>
-  res.send('Welcome To My Mini Auth App!')
+  res.render('index')
 )
 
 app.listen(port, () =>
