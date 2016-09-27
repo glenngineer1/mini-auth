@@ -5,4 +5,29 @@ html
     link(rel='stylesheet' href='/lib/bootstrap/dist/css/bootstrap.min.css')
   body
     .container
-      h1 Welcome to My Mini Auth App!
+      h1 Welcome a@b.com
+    .heading
+      h1 Login
+      if error
+        h2= error
+    .login-form
+      form(method='POST')
+        .form-group
+          label(for='email') Email Address
+          input.form-control#email(
+            type='email'
+            name='email'
+            placeholder='you@you.com'
+            required
+            )
+        .form-group
+          label(for='password') Password
+          input.form-control#password(
+            type='password'
+            name='password'
+            placeholder='************'
+            required
+          )
+        .contact-form_submit
+          a.btn.btn-danger.btn-lg(href='/') Cancel
+          input.btn.btn-success.btn-lg(type='submit' value='Login')
